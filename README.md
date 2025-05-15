@@ -70,7 +70,7 @@ Details of sensors and related electronic equipment is as follows:
 |MQ-7|GND, VCC (3.3V), PIN = ANALOG 32|
 |PMS7003|GND, VCC (3.3V), PIN = DIG 19, DIG 18 (not used)|
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.001.jpeg)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.001.jpeg)
 
 **Communication Technology:** 
 
@@ -95,7 +95,7 @@ This section is an overview of the protocol stack of ESP-NOW discussed by Urazay
 |Data Link to Presentation Layer|Espressif’s API for sending/receiving messages|
 |Network Access Layer|<p>Mac Layer: Implements peer-to-peer communication using IEEE 802.11 Wi-Fi MAC frames</p><p>Physical Layer: Uses Wi-Fi physical layer (2.4 GHz, same as 802.11 b/g/n)</p>|
 
-` `![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.002.png)
+` `![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.002.png)
 
 **Topologies supported by ESP-NOW:**
 
@@ -105,13 +105,13 @@ The table shows possible network topologies if the system is to be deployed in t
 | - | - |
 |**One Way Communication**||
 |<p>**One-to One-**</p><p>In this type of communication methodology, the sent data may be sensor readings or controlling commands (Switching ON and OFF devices, Moving Servo motor, changing RGB color values or other command) </p>|![ref1]|
-|<p>**One to Many**</p><p>one ESP32 board transfer the same or different data to otherESP32 boards in a One-to-Many communication methodology.</p>|<p>![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.004.png)</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|
-|<p>**Many to One:**</p><p>one ESP32 board receives data from other ESP32 boards in a Many-to-One communication methodology.</p>|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.005.png)|
+|<p>**One to Many**</p><p>one ESP32 board transfer the same or different data to otherESP32 boards in a One-to-Many communication methodology.</p>|<p>![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.004.png)</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|
+|<p>**Many to One:**</p><p>one ESP32 board receives data from other ESP32 boards in a Many-to-One communication methodology.</p>|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.005.png)|
 
 |**Two Way Communication**||
 | :-: | :- |
 |<p>**One-to-One**</p><p>Two-way communication between ESP32 boards is supported through the ESP-NOW protocol. In this communication style, each board can act as both a sender and a receive.</p>|<p>![ref2]</p><p></p><p></p><p></p><p></p><p></p>|
-|<p>**Many-to-many:**</p><p>The ESP-NOW two-way communication methodology is suitable for creating a mesh network in which many ESP32 boards can transfer data to each other. This methodology can be used to create a network for sharing sensor readings and monitoring system in weather station, construction sites and archaeological sites.</p>|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.007.png)|
+|<p>**Many-to-many:**</p><p>The ESP-NOW two-way communication methodology is suitable for creating a mesh network in which many ESP32 boards can transfer data to each other. This methodology can be used to create a network for sharing sensor readings and monitoring system in weather station, construction sites and archaeological sites.</p>|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.007.png)|
 
 **Addressing Scalability in Real Environments:**
 
@@ -149,7 +149,7 @@ To visualize and analyze the data, we have set up a system using ThingSpeak and 
 
 For analyzing the data and predicting the AQI levels in real-time, we have trained regression models using a publicly available dataset discussed in the next section. The collected data on ThingSpeak is preprocessed and passed through the ML models to give AQI as an output along with its category.
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.008.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.008.png)
 
 
 **Understanding the Dataset:**
@@ -158,7 +158,7 @@ For analyzing the data and predicting the AQI levels in real-time, we have train
 | :-: | :- |
 |Link|<https://www.kaggle.com/datasets/waqi786/global-air-quality-dataset>|
 |Published|2024|
-|Features|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.009.png)|
+|Features|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.009.png)|
 
 **Features Concerned with our use case:**
 
@@ -169,13 +169,13 @@ For analyzing the data and predicting the AQI levels in real-time, we have train
 
 1. Data Preprocessing: 
    1. We dropped the columns that did not correlate with our use case.
-      ![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.010.png)
+      ![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.010.png)
 
    1. Null values: No null values were present. The figure and the table show it.
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.011.png)  ![A blue rectangle with black numbers
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.011.png)  ![A blue rectangle with black numbers
 
-AI-generated content may be incorrect.](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.012.png)
+AI-generated content may be incorrect.](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.012.png)
 
 - **Exploratory Data Analysis:**
   Outliers detection: Box plot was drawn to check any outliers. The figures show no such outliers was present.
@@ -190,32 +190,32 @@ AI-generated content may be incorrect.]
 
   ![A graph with a blue square
 
-AI-generated content may be incorrect.](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.015.png)
+AI-generated content may be incorrect.](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.015.png)
 
 - **Time Series Analysis:**
   For each of the pollutants, the quantity of each pollutant was checked against time. The values are averaged for 5 days to show a clear picture of the graph and any up and down trend.
 
-  ![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.016.png)
+  ![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.016.png)
 
-  ![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.017.png)
+  ![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.017.png)
 
-  ![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.018.png)
+  ![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.018.png)
 
 1. Data Modelling
 
    To label the dataset, we have used a function called ‘cal\_aqi\_us’ which uses the US EPA AQI standard to calculate the AQI. The purpose of this function is to convert pollutant levels into AQI figures
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.019.png)![How to Calculate AQI and NowCast Indices - Met One Instruments](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.020.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.019.png)![How to Calculate AQI and NowCast Indices - Met One Instruments](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.020.png)
 
 We used a second function categorize\_aqi(aqi) which receives the AQI calculated from the previous function and allots a category to it as shown in the table above.
 
 ![A pie chart with different colored circles with Crust in the background
 
-AI-generated content may be incorrect.](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.021.png)These values of “AQI” are then appended to the data.
+AI-generated content may be incorrect.](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.021.png)These values of “AQI” are then appended to the data.
 
 ![A screenshot of a graph
 
-AI-generated content may be incorrect.](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.022.png)
+AI-generated content may be incorrect.](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.022.png)
 
 1. Model Training:
 
@@ -223,9 +223,9 @@ AI-generated content may be incorrect.](Aspose.Words.20446f82-9ed3-4597-867e-de6
 
 ![A blue dotted line with a red line
 
-AI-generated content may be incorrect.](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.023.png)![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.024.png)      
+AI-generated content may be incorrect.](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.023.png)![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.024.png)      
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.025.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.025.png)
 
 1. Fetching the Data from ThingSpeak
 
@@ -238,16 +238,16 @@ AI-generated content may be incorrect.](Aspose.Words.20446f82-9ed3-4597-867e-de6
    |Filed 4|Temperature|
    |Field 2|Humidity|
    |Field 6|CO|
-   |<p></p><p>![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.026.png)</p><p>![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.027.png)</p><p>![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.028.png)</p><p></p>||
+   |<p></p><p>![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.026.png)</p><p>![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.027.png)</p><p>![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.028.png)</p><p></p>||
 
    We export this data using ThingSpeak READ API, pass it through our model and make our predictions.
 
-   ![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.029.png)
+   ![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.029.png)
 
 1. Results:
    These are the results predicted by the model.
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.030.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.030.png)
 
 **Mobile & API Layer**
 
@@ -291,7 +291,7 @@ Everything happens on the phone; the only dependency is a tiny REST API that liv
 
 **Architecture Design:**
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.031.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.031.png)
 
 *(Generated by[ ](https://www.eraser.io/ai/architecture-diagram-generator)<https://www.eraser.io/ai/architecture-diagram-generator> )*
 
@@ -303,18 +303,18 @@ AI-generated content may be incorrect.]![ref3]
 
 ` `**Mobile app Screen catalogue:**
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.034.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.034.png)
 
 ` `**App Screenshots:**
 
-|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.035.png)|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.036.png)|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.037.png)|
+|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.035.png)|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.036.png)|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.037.png)|
 | :-: | :-: | :-: |
 |Dashboard with Moderate AQI|Side Menu Bar|Time Based average AQI detail screen|
 ||||
-|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.038.png)|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.039.png)|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.040.png)|
+|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.038.png)|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.039.png)|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.040.png)|
 |Sensor based average AQI detail screen|AQI History for every 20 minutes|Dashboard with Good AQI|
 ||||
-|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.041.png)|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.042.png)|![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.043.png)|
+|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.041.png)|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.042.png)|![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.043.png)|
 |Unhealthy air Notification Alert|Unhealthy for Sensitive Groups Notification Alert|Hazardous air Notification Alert|
 
 **User-flow:**
@@ -333,17 +333,17 @@ AI-generated content may be incorrect.]![ref3]
 - Adds the human-readable category (Good → Hazardous).
 - Returns a single, flat JSON object per measurement — the phone never has to multiply, divide or scale anything.
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.044.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.044.png)
 
 Because the API is stateless, it can run cheaply on Render.com or any other free container host; horizontal scaling is trivial if more users poll the data. For now we have used our Local Host for running the service.
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.045.png)
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.045.png)
 
 **Mobile-app summary**
 
 Our Flutter application turns the raw IoT stream into clear, actionable information without burdening the handset. A real-time dashboard shows an animated AQI dial and curved trend lines; drill-down pages let users inspect any single pollutant; the paginated history screen condenses readings into half-hour buckets for smooth scrolling; and local push notifications fire the moment air quality slips into Unhealthy, Very Unhealthy or Hazardous territory. All heavy computation—feature normalization, Random-Forest regression, and EPA breakpoint logic—runs on the FastAPI backend, so the client remains lightweight, battery-friendly and simple to maintain. The current build is production-ready for Android (and iOS with minimal tweaks), while future iterations could add iOS background fetch and optional e-mail alerts.
 
-![](Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.046.png)**Version-control & collaboration overview (Git/GitHub)**
+![](images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.046.png)**Version-control & collaboration overview (Git/GitHub)**
 
 |**Branch**|**Purpose**|**Default reviewers**|
 | :- | :-: | :-: |
@@ -362,15 +362,15 @@ Our Flutter application turns the raw IoT stream into clear, actionable informat
 
 [2] Urazayev, Dnislam & Eduard, Aida & Ahsan, Muhammad & Zorbas, Dimitrios. (2023). Indoor Performance Evaluation of ESP-NOW. <https://www.researchgate.net/publication/369626626_Indoor_Performance_Evaluation_of_ESP-NOW>
 
-[ref1]: Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.003.png
-[ref2]: Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.006.png
+[ref1]: images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.003.png
+[ref2]: images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.006.png
 [A group of blue squares
 
-AI-generated content may be incorrect.]: Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.013.png
+AI-generated content may be incorrect.]: images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.013.png
 [A group of blue squares
 
-AI-generated content may be incorrect.]: Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.014.png
+AI-generated content may be incorrect.]: images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.014.png
 [A screenshot of a computer
 
-AI-generated content may be incorrect.]: Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.032.png
-[ref3]: Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.033.png
+AI-generated content may be incorrect.]: images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.032.png
+[ref3]: images/Aspose.Words.20446f82-9ed3-4597-867e-de65808fe52d.033.png
